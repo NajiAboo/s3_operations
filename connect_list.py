@@ -1,8 +1,9 @@
 import boto3
+from constants import *
 
 client = boto3.client('s3', 
-                      aws_access_key_id="AKIAV6E5X54W5KVYY46X",
-                      aws_secret_access_key="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"
+                      aws_access_key_id= AWS_ACCESS_KEY_ID,
+                      aws_secret_access_key=AWS_SECRET_ACCESS_KEY
                       )
 
 response = client.list_buckets()
